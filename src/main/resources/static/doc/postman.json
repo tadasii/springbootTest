@@ -1,0 +1,225 @@
+{
+  "info": {
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "bbedc302-1cb6-4f43-879c-15925ff1ca18",
+    "name": "springbootTest"
+  },
+  "item": [
+    {
+      "name": "测试层",
+      "item": [
+        {
+          "name": "测试异常",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://localhost:8080/test/exception",
+              "protocol": "http",
+              "path": [
+                "test",
+                "exception"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "query": [],
+              "variable": []
+            },
+            "description": "测试异常",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "token请求头的值",
+                "type": "text",
+                "disabled": true,
+                "name": "Authorization",
+                "description": "token请求头的值"
+              }
+            ]
+          },
+          "description": "测试异常"
+        },
+        {
+          "name": "测试成功",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://localhost:8080/test/success",
+              "protocol": "http",
+              "path": [
+                "test",
+                "success"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "query": [],
+              "variable": []
+            },
+            "description": "测试成功",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "token请求头的值",
+                "type": "text",
+                "disabled": true,
+                "name": "Authorization",
+                "description": "token请求头的值"
+              }
+            ]
+          },
+          "description": "测试成功"
+        },
+        {
+          "name": "测试响应头",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 915,\n  \"username\": \"bennett.graham\",\n  \"sex\": \"y6r6f6\",\n  \"birthday\": \"2021-12-10 21:29:56\",\n  \"address\": \"Suite 773 411 DuBuque Drive， Altenwerthport， KS 86068\",\n  \"password\": \"qkwrq2\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/test/header",
+              "protocol": "http",
+              "path": [
+                "test",
+                "header"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "query": [],
+              "variable": []
+            },
+            "description": "测试响应头",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "token请求头的值",
+                "type": "text",
+                "disabled": true,
+                "name": "Authorization",
+                "description": "token请求头的值"
+              }
+            ]
+          },
+          "description": "测试响应头"
+        },
+        {
+          "name": "Interface name is not set.",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 296,\n  \"username\": \"bennett.graham\",\n  \"sex\": \"kl3x07\",\n  \"birthday\": \"2021-12-10 21:29:56\",\n  \"address\": \"Suite 773 411 DuBuque Drive， Altenwerthport， KS 86068\",\n  \"password\": \"60wx9f\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/test/queryByPage?page\u003d1\u0026pageNumber\u003d931\u0026size\u003d10\u0026paged\u003dtrue\u0026unpaged\u003dtrue\u0026offset\u003d1\u0026pageSize\u003d10",
+              "protocol": "http",
+              "path": [
+                "test",
+                "queryByPage"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "query": [],
+              "variable": []
+            },
+            "description": "",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "token请求头的值",
+                "type": "text",
+                "disabled": true,
+                "name": "Authorization",
+                "description": "token请求头的值"
+              }
+            ]
+          }
+        },
+        {
+          "name": "跳转到应用列表页面",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "pageNo",
+                  "type": "text",
+                  "description": "要显示第几页内容",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "type": "text",
+                  "description": "一页显示多少条",
+                  "value": "10"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8080/test/list?pageNo\u003d1\u0026pageSize\u003d10",
+              "protocol": "http",
+              "path": [
+                "test",
+                "list"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "query": [
+                {
+                  "key": "pageNo",
+                  "value": "1",
+                  "description": "要显示第几页内容"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "description": "一页显示多少条"
+                }
+              ],
+              "variable": []
+            },
+            "description": "跳转到应用列表页面",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "token请求头的值",
+                "type": "text",
+                "disabled": true,
+                "name": "Authorization",
+                "description": "token请求头的值"
+              }
+            ]
+          },
+          "description": "跳转到应用列表页面"
+        }
+      ]
+    }
+  ]
+}
