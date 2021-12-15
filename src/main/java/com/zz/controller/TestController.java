@@ -69,4 +69,10 @@ public class TestController extends BaseController {
         return  page;
     }
 
+    @PostMapping("/user")
+    public User user(){
+        User user=getUser();
+        return user;
+    }
+
 }

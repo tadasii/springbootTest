@@ -1,3 +1,8 @@
 spring:
   profiles:
     active: @profiles.active@
+
+token:
+  secretKey: security
+  refreshTime: 1000000       #刷新时间（毫秒）
+  expiresTime: 2000000      #过期时间（毫秒）
